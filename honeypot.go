@@ -1,15 +1,9 @@
 package main
 
 import (
-	"github.com/gliderlabs/ssh"
-	"io"
-	"log"
+	"github.com/rschmicker/honeypot/honeyssh"
 )
 
 func main() {
-		ssh.Handle(func(s ssh.Session) {
-		io.WriteString(s, "Hello world\n")
-	})
-
-	log.Fatal(ssh.ListenAndServe(":2222", nil))
+	honeyssh.StartServer()
 }
