@@ -1,0 +1,6 @@
+package: github.com/rschmicker/honeypot
+import:
+  - package: golang.org/x/crypto/ssh
+  - package: github.com/gorilla/mux
+  - package: gopkg.in/yaml.v2
+  
